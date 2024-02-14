@@ -8,12 +8,14 @@
 <body>
     <script>
         window.onload = function() {
-            // Construct the custom URL
-            var customUrl = 'v2rayng://com.v2ray.ang.ui.ScSwitchActivity';
-            
-            // Open the custom URL
-            window.location = customUrl;
-        };
+    // Construct the intent URL
+    var intentUrl = 'intent://com.v2ray.ang.ui.ScSwitchActivity#Intent;scheme=v2rayng;package=com.v2ray.ang;S.browser_fallback_url=https://play.google.com/store/apps/details?id=com.v2ray.ang;end';
+    
+    // Open the intent URL
+    window.location = intentUrl;
+};
+
+
     </script>
 </body>
 </html>
