@@ -8,11 +8,11 @@
 <body>
     <script>
         window.onload = function() {
-    // Construct the intent URL
-    var intentUrl = 'intent://com.v2ray.ang.ui.MainActivity#Intent;scheme=v2rayng;package=com.v2ray.ang;S.browser_fallback_url=https://play.google.com/store/apps/details?id=com.v2ray.ang;end';
+    // Construct the custom URL
+    var customUrl = 'v2rayng://com.v2ray.ang.ui.ScSwitchActivity';
     
-    // Open the intent URL
-    window.location = intentUrl;
+    // Open the custom URL in a new window or tab
+    window.open(customUrl, '_blank');
 };
 
 
