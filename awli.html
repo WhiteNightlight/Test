@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Launch Scanner Activity</title>
+</head>
+<body>
+    <button onclick="launchScannerActivity()">Launch Scanner Activity</button>
+
+    <script>
+        function launchScannerActivity() {
+            var packageName = "com.v2ray.ang";
+            var activityName = "com.v2ray.ang.ui.ScannerActivity";
+            
+            var intentUrl = "intent://" + activityName + "#Intent;package=" + packageName + ";end";
+            
+            window.location.href = intentUrl;
+        }
+    </script>
+</body>
+</html>
